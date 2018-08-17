@@ -1,4 +1,7 @@
-#!/bin/bash -xe
+#!/bin/bash
+
+set -e
+# set -x
 
 ARCHIVE_URL=https://39qiv73eht2y1az3q51pykkf-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/FingKit_CLI_Linux_Debian.zip
 INSTALL_PKGOLD="Linux_Debian/fing-5.1.0-amd64 (3).deb"

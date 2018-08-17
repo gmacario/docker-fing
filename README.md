@@ -7,19 +7,19 @@ Docker image for the [Fing CLI](https://www.fing.io/fingkit-sdk-downloads/).
 #### Get help
 
 ```shell
-docker run gmacario/fing --help
+docker run --rm gmacario/fing --help
 ```
 
 #### Scan local network
 
 ```shell
-docker run -ti --net=host gmacario/fing
+docker run -ti --rm --net=host gmacario/fing
 ```
 
 #### Start interactive mode
 
 ```shell
-docker run -ti --net=host gmacario/fing --interactive
+docker run -ti --rm --net=host gmacario/fing --interactive
 ```
 
 ### Rebuilding the container

@@ -10,6 +10,7 @@ RUN apt-get update -qq && \
 
 # RUN ls -la /usr/bin
 
-ENTRYPOINT "/usr/bin/fing"
+ENTRYPOINT ["/usr/bin/fing"]
+# CMD ["--help"]
 
 # EOF

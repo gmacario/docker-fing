@@ -2,7 +2,7 @@
 
 Docker image for the [Fing CLI](https://www.fing.io/fingkit-sdk-downloads/).
 
-### Usage
+### Usage examples
 
 #### Get help
 
@@ -10,10 +10,10 @@ Docker image for the [Fing CLI](https://www.fing.io/fingkit-sdk-downloads/).
 docker run --rm gmacario/fing --help
 ```
 
-#### Scan local network
+#### Discover hosts in a given address range
 
 ```shell
-docker run -ti --rm --net=host gmacario/fing
+docker run -ti --rm --net=host gmacario/fing 192.168.64.0/24
 ```
 
 #### Start interactive mode

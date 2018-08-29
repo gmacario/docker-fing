@@ -10,7 +10,7 @@ RUN apt-get update -qq && \
     unzip $(basename ${FING_ARCHIVE_URL}) && \
     mv "Linux_Debian/fing-5.1.0-amd64 (3).deb" "Linux_Debian/fing-5.1.0-amd64.deb"
 
-RUN dpkg -i /tmp/fing-download/Linux_Debian/fing-5.1.0-amd64.deb && \
+RUN dpkg -i /tmp/fing-download/Linux_Debian/fing-*-amd64.deb && \
     rm -rf /tmp/fing-download && \
     rm -rf /var/lib/apt/lists/*
 

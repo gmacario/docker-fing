@@ -22,13 +22,14 @@ docker run -ti --rm --net=host gmacario/fing
 docker run -ti --rm --net=host gmacario/fing --interactive
 ```
 
-### Rebuilding the container
+### Rebuild the Docker image
 
 ```shell
-./build.sh
-docker login
-docker push gmacario/fing
+docker build -t gmacario/fing .
 ```
+
+You may change the URL where the fing binary is fetched from
+using the `--build-arg FING_ARCHIVE_URL="https://another.url"` option.
 
 ### License
 

@@ -25,7 +25,7 @@ docker run -ti --rm --net=host gmacario/fing 192.168.64.0/24
 #### Log network events in CSV
 
 ```shell
-docker run -ti --rm --net=host gmacario/fing 192.168.1.0/24 --silent -o log.csv
+docker run -ti --rm --net=host gmacario/fing 192.168.1.0/24 --silent -o log,csv
 ```
 
 Sample output:

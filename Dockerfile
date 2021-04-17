@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ARG FING_ARCHIVE_URL=https://www.fing.com/images/uploads/general/CLI_Linux_Generic_5.5.2.zip
+ARG FING_ARCHIVE_URL=https://www.fing.com/images/uploads/general/CLI_Linux_Debian_5.5.2.zip
 
 RUN apt-get update -qq && \
     apt-get install -qqy curl unzip && \
